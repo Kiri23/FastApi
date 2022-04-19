@@ -1,3 +1,6 @@
+name: Generate Axios SDK
+on: push
+
 jobs:
   generate-axios-client:
     runs-on: ubuntu-latest
