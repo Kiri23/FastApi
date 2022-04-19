@@ -1,6 +1,9 @@
 {
   "cSpell.words": [
+    "axios",
     "Deta",
+    "openapi",
+    "openapitools",
     "uvicorn"
   ]
 }

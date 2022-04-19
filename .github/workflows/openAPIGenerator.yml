@@ -1,0 +1,22 @@
+jobs:
+  generate-axios-client:
+    runs-on: ubuntu-latest
+    name: FastApi
+    steps:
+      # Checkout your code
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # Generate your OpenAPI document (if you don't write it manually)
+
+      # Use the action to generate a client package
+      - name: Generate Axios Client
+        uses: openapi-generators/openapitools-generator-action@v1
+        with:
+          generator: typescript-axios
+          openapi-url: https://bwtkx9.deta.dev/openapi.json
+
+      # Do something with the generated client (likely publishing it somewhere)
+      - name: Do something with the client
+        run: |
+          cd typescript-axios-client
