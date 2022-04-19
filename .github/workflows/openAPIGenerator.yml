@@ -22,4 +22,4 @@ jobs:
       # Do something with the generated client (likely publishing it somewhere)
       - name: Do something with the client
         run: |
-          cd typescript-axios-client | ls
+          cd typescript-axios-client && ls
