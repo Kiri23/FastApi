@@ -19,6 +19,12 @@ jobs:
           generator: typescript-axios
           openapi-url: https://bwtkx9.deta.dev/openapi.json
 
+      - name: configure git credential
+        uses: oleksiyrudenko/gha-git-credentials@v2.1
+        with:
+          global: true
+          name: "Christian"
+          email: "christian_nogueras94+github@hotmail.com"
       # Do something with the generated client (likely publishing it somewhere)
       - name: Do something with the client
         uses: actions/setup-node@v2
