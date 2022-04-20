@@ -19,7 +19,7 @@ jobs:
           generator: typescript-axios
           openapi-url: https://bwtkx9.deta.dev/openapi.json
 
-      # Do something with the generated client (likely publishing it somewhere)
+      # Do something with the generated client (likely publishing it somewhere).
       - name: Do something with the client
         uses: actions/setup-node@v2
         with:
