@@ -27,6 +27,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: cd typescript-axios-client
       - run: npm init --scope=@kiri23 -y
+      - run: cat package.json
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
