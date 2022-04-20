@@ -19,12 +19,6 @@ jobs:
           generator: typescript-axios
           openapi-url: https://bwtkx9.deta.dev/openapi.json
 
-      - name: configure git credential
-        uses: oleksiyrudenko/gha-git-credentials@v2.1
-        with:
-          global: true
-          name: "Christian"
-          email: "christian_nogueras94+github@hotmail.com"
       # Do something with the generated client (likely publishing it somewhere)
       - name: Do something with the client
         uses: actions/setup-node@v2
@@ -33,6 +27,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: cd typescript-axios-client
       - run: npm init --scope=@kiri23 -y
+      - run: git config user.email "christian_nogueras94+github@hotmail.com"
+      - run: git config user.name "kiri23"
       - run: npm version minor
       - run: npm publish --access public
         env:
