@@ -26,9 +26,14 @@ jobs:
         with:
           node-version: "14"
           registry-url: https://registry.npmjs.org/
-      - run: cd typescript-axios-client
-      - run: npm install
-      - run: npm run build
-      - run: npm publish --access public
+      - name: Install dependencies for generated SDK
+        run: npm install
+        working-directory: typescript-axios-client
+      - name: Build generated SDK
+        run: npm build
+        working-directory: typescript-axios-client
+      - name: Install dependencies for generated SDK
+        run: npm publish --access public
+        working-directory: typescript-axios-client
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
