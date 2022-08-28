@@ -5,7 +5,8 @@ fastApiEnv
 __pycache__/
 *.py[cod]
 *$py.class
-
+clients
+openapitools.json
 # C extensions
 *.so
 
