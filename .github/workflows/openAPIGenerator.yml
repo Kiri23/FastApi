@@ -32,10 +32,6 @@ jobs:
       - name: Build generated SDK
         run: npm build
         working-directory: typescript-axios-client
-      - run: git config user.email "christian_nogueras94+github@hotmail.com"
-      - run: git config user.name "kiri23"
-      - name: Install dependencies for generated SDK
-        run: npm publish --access public
-        working-directory: typescript-axios-client
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
