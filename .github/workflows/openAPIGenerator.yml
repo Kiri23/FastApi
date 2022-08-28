@@ -29,7 +29,6 @@ jobs:
       - run: npm init --scope=@kiri23 -y
       - run: git config user.email "christian_nogueras94+github@hotmail.com"
       - run: git config user.name "kiri23"
-      - run: npm version minor
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
