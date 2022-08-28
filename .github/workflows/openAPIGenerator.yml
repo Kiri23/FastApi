@@ -26,7 +26,6 @@ jobs:
           node-version: "14"
           registry-url: https://registry.npmjs.org/
       - run: cd typescript-axios-client
-      - run: npm init --scope=@kiri23 -y
       - run: git config user.email "christian_nogueras94+github@hotmail.com"
       - run: git config user.name "kiri23"
       - run: npm publish --access public
