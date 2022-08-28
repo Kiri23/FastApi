@@ -32,7 +32,7 @@ jobs:
       - name: Build generated SDK
         run: npm build
         working-directory: typescript-axios-client
-      - name: Install dependencies for generated SDK
+      - name: Publish generated SDK
         run: npm publish --access public
         working-directory: typescript-axios-client
         env:
