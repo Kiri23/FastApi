@@ -32,6 +32,7 @@ jobs:
       - name: Build generated SDK
         run: npm run build
         working-directory: typescript-axios-client
+      # The version come from open api
       - name: Publish generated SDK
         run: npm publish --access public
         working-directory: typescript-axios-client

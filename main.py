@@ -1,5 +1,6 @@
 import uvicorn
 from fastapi import FastAPI
+from version import custom_openapi
 
 app = FastAPI()
 
@@ -13,6 +14,8 @@ def read_root():
 def read_item(item_id: int):
     return {"item_id": item_id}
 
+
+app.openapi = lambda: custom_openapi(app)
 
 # To allow clicking the play button in vscode and uvicorn command is run
 if __name__ == "__main__":
