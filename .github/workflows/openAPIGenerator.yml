@@ -30,7 +30,7 @@ jobs:
         run: npm install
         working-directory: typescript-axios-client
       - name: Build generated SDK
-        run: npm build
+        run: npm run build
         working-directory: typescript-axios-client
       - name: Publish generated SDK
         run: npm publish --access public
