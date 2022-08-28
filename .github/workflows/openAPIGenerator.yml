@@ -14,7 +14,7 @@ jobs:
 
       # Use the action to generate a client package
       - name: Generate Axios Client
-        uses: openapi-generators/openarerties pitools-generator-action@v1
+        uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: typescript-axios
           openapi-url: https://bwtkx9.deta.dev/openapi.json
