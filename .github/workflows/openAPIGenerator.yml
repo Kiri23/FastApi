@@ -26,8 +26,8 @@ jobs:
           node-version: "14"
           registry-url: https://registry.npmjs.org/
       - run: cd typescript-axios-client
-      - run: git config user.email "christian_nogueras94+github@hotmail.com"
-      - run: git config user.name "kiri23"
+      - run: npm install
+      - run: npm run build
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
