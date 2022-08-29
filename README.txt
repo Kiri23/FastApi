@@ -1,1 +1,0 @@
-Trello board: https://trello.com/invite/b/KZ3C27S5/7a9513d8f4bdbfea980248ea59daab18/fastapi-sdk
