@@ -1,3 +1,4 @@
 bumpversion --current-version 0.2.0 patch VERSION
+tutorial: https://blog.developer.atlassian.com/bumpversion-is-automation-for-semantic-versioning/
 
 0.2.2
