@@ -1,6 +1,7 @@
 anyio==3.5.0
 asgiref==3.5.0
 autopep8==1.6.0
+bump2version==1.0.1
 click==8.1.2
 fastapi==0.75.1
 h11==0.13.0
