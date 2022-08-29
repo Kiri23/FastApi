@@ -17,7 +17,6 @@ jobs:
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: typescript-axios
-          openapi-url: https://bwtkx9.deta.dev/openapi.json
           command-args: --additional-properties=npmName=@kiri23/fastapi
 
       # Do something with the generated client (likely publishing it somewhere).
