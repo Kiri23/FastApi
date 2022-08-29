@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
+import json
 
 
 def custom_openapi(app: FastAPI):
@@ -15,4 +16,13 @@ def custom_openapi(app: FastAPI):
         "url": "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
     }
     app.openapi_schema = openapi_schema
+    generateOpenapiFile(openapi_schema)
     return app.openapi_schema
+
+
+def generateOpenapiFile(schema: dict):
+    # Serializing json
+    json_object = json.dumps(schema, indent=4)
+    # Writing to sample.json
+    with open("openapi.json", "w") as outfile:
+        outfile.write(json_object)
